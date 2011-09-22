@@ -1,6 +1,10 @@
 = mongo_mapper-accepts_nested_attributes
 
-Adds a `accepts_nested_attributes_for` class method to make mongo_mapper models work with nested forms.
+Adds a <code>accepts_nested_attributes_for</code> class method to make mongo_mapper models work with nested forms.
+
+Add gem to Gemfile:
+
+  gem "mongo_mapper-accepts_nested_attributes", :require => "mongo_mapper/accepts_nested_attributes"
 
 To use include in your model:
 
