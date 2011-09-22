@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "mongo_mapper-accepts_nested_attributes"
   gem.homepage = "http://github.com/mooktakim/mongo_mapper-accepts_nested_attributes"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Adds a `accepts_nested_attributes_for` to mongo_mapper.}
+  gem.description = %Q{Adds a `accepts_nested_attributes_for` class method to make mongo_mapper models work with nested forms.}
   gem.email = "Mooktakim@fluxter.co.uk"
   gem.authors = ["Mooktakim Ahmed"]
   # dependencies defined in Gemfile

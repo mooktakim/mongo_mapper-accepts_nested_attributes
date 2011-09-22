@@ -1,9 +1,27 @@
 = mongo_mapper-accepts_nested_attributes
 
-Description goes here.
+Adds a `accepts_nested_attributes_for` class method to make mongo_mapper models work with nested forms.
+
+To use include in your model:
+
+  plugin MongoMapper::AcceptsNestedAttributes
+
+Now you can use:
+
+  accepts_nested_attributes_for :posts
+  accepts_nested_attributes_for :user
+
+Or to add it globally, create an initialization file with:
+
+  MongoMapper::Document.plugin(MongoMapper::AcceptsNestedAttributes)
+  MongoMapper::EmbeddedDocument.plugin(MongoMapper::AcceptsNestedAttributes)
+
+
+DELETE feature has not been added yet.
+This is a VERY basic plugin to simulate the feature. Hopefully, mongo_mapper will have support built in.
 
 == Contributing to mongo_mapper-accepts_nested_attributes
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
 * Fork the project
@@ -16,4 +34,3 @@ Description goes here.
 
 Copyright (c) 2011 Mooktakim Ahmed. See LICENSE.txt for
 further details.
-
